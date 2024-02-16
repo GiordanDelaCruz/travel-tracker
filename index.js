@@ -78,16 +78,16 @@ app.post("/add", async (req, res) => {
       console.log("Country code not found.");
 
       // Invalid Country
-      req.session.error = 'Country does not exist, please try again.';
-      res.redirect("/");
+      // req.session.error = 'Country does not exist, please try again.';
+      // res.redirect("/");
     }
     // Redirect to homepage
     res.redirect("/");
     
   } catch (error) {
     // Repeated Country 
-    req.session.error = 'Country has already been added, please try again.';
-    res.redirect("/");
+    // req.session.error = 'Country has already been added, please try again.';
+    // res.redirect("/");
   }  
 });
 
